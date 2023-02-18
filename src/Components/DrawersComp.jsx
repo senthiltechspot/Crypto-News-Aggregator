@@ -43,28 +43,17 @@ const DrawersComp = (props) => {
                   <Heading size="md">Content :</Heading>
                   <h1 size="md">{props.data.content}</h1>
                 </Box>
-                {/* <Box flex="1">
-                  <Heading size="md">Author :</Heading>
-                  <h1 size="md">{props.data.source.author}</h1>
-                </Box> */}
+
                 <Box>
                   <a
                     href={props.data.url}
                     target="_blank"
-                    className="ReadButton"
+                    className="btn btn-warning"
                   >
                     Read More
-                    {/* <Button colorScheme="yellow">Yellow</Button> */}
                   </a>
                 </Box>
               </Flex>
-              {/* <Flex h={"100px"} flexDirection={"column"} gap={"5"} p={"7"}>
-                <Box flex="1">
-                  <Heading size="md">Address :</Heading>
-                  <h1 size="md">{props.data.content}</h1>
-                </Box>
-                <Spacer />
-              </Flex> */}
             </div>
           </DrawerBody>
 

@@ -32,12 +32,15 @@ const NavBar = () => {
           <Heading size="md"> Crypto News Aggregator</Heading>
         </Box>
         <Spacer />
-        <button class="btn" onclick={logout()}>
-          Logout
-        </button>
+        
         <Stack direction="row">
           <Switch colorScheme="teal" size="lg" onChange={toggleColorMode} />
+          <Spacer />
+          <button className="btn btn-secondary" onclick={logout}>
+          Logout
+        </button>
         </Stack>
+        
       </Flex>
     </div>
   );
