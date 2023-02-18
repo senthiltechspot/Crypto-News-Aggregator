@@ -5,7 +5,7 @@ import "./App.css";
 import NavBar from "./Components/NavBar";
 import Pagination from "./Components/Pagination";
 import Records from "./Components/Records";
-import.meta.env;
+
 function FetchDataFromAPI(url) {
   const [data, setData] = useState([]);
   useEffect(() => {
