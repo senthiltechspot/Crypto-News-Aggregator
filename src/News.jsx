@@ -16,9 +16,9 @@ function FetchDataFromAPI(url) {
   return data;
 }
 
-function News() {
-  const result = FetchDataFromAPI(
-    `https://newsapi.org/v2/everything?q=crypto&apiKey=${'d0f92e35a543425198cbafac0b3419b3'}`
+async function News() {
+  const result = await FetchDataFromAPI(
+    `https://newsapi.org/v2/everything?q=crypto&apiKey=d0f92e35a543425198cbafac0b3419b3`
   );
   console.log(result);
 
